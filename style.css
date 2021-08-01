@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #067c41;
+  --primary-dark-color: #022710;
+}
+* {
+  box-shadow: border-box;
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+form,
+input,
+select,
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+h1 {
+  animation: title 2s;
+  font-size: 2rem;
+  margin-left: 8rem;
+}
+@keyframes title {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0.7rem;
+}
+input {
+  font-size: 2rem;
+  height: 3rem;
+  padding: 0 20px;
+}
+input:focus {
+  outline: 1px solid var(--primary-dark-color);
+}
+
+button {
+  width: 100%;
+  border: none;
+  background: #a5a4a4;
+  color: #fff;
+  font: normal 700 1.3rem "Open sans";
+  height: 50px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+button:hover {
+  background-color: #747171;
+}
+.calculadora {
+  width: 25rem;
+}
+.display {
+  text-align: right;
+  width: 100%;
+  max-width: 22rem;
+}
+.eq {
+  background-color: #1178ee;
+}
+.eq:hover {
+  background-color: #0a4281;
+}
+
+@media (max-width: 440px) {
+  h1 {
+    text-align: center;
+    margin: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  .calculadora {
+    max-width: 20rem;
+    margin: auto;
+  }
+  .display {
+    width: 86%;
+  }
+}
