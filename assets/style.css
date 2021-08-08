@@ -73,9 +73,9 @@ button {
 button:hover {
   background-color: #747171;
 }
-.calculadora {
+/* .calculator {
   width: 25rem;
-}
+} */
 .display {
   text-align: right;
   width: 100%;
@@ -96,11 +96,11 @@ button:hover {
   .container {
     width: 100%;
   }
-  .calculadora {
+  .calculator {
     max-width: 20rem;
     margin: auto;
   }
   .display {
-    width: 86%;
+    width: 87%;
   }
 }
