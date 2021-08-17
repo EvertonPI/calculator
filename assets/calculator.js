@@ -1,8 +1,8 @@
-function criaCalculadora() {
+function createCalculator() {
   return {
     display: document.querySelector(".display"),
 
-    inicia() {
+    initial() {
       this.cliqueBottom();
       this.pressEnter();
     },
@@ -25,6 +25,7 @@ function criaCalculadora() {
       try {
         account = eval(account);
         this.display.value = +account;
+        if (!account) alert("conta invalida, fazer a conta que deseja");
         return;
       } catch (erro) {
         alert("só numeros");
@@ -44,5 +45,5 @@ function criaCalculadora() {
   };
 }
 
-const calculadora = criaCalculadora();
-calculadora.inicia();
+const calculator = createCalculator();
+calculator.initial();
