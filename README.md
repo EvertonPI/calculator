@@ -1,3 +1,3 @@
 # calculator
 
-- **Calculadora** para interagir, utilizando função construtora.
+- **Calculadora** para interagir, utilizando função fabrica .
