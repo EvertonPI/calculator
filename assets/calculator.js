@@ -7,7 +7,7 @@ function createCalculator() {
       this.pressEnter();
     },
     pressEnter() {
-      this.display.addEventListener("keyup", (e) => {
+      this.display.addEventListener("keyup", e => {
         if (e.keyCode === 13) this.doAccount();
       });
     },
@@ -33,7 +33,7 @@ function createCalculator() {
       }
     },
     cliqueBottom() {
-      document.addEventListener("click", (e) => {
+      document.addEventListener("click", e => {
         const el = e.target;
 
         if (el.classList.contains("btn-num")) this.btnStopDisplay(el.innerText);
