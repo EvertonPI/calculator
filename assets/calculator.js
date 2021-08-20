@@ -25,8 +25,10 @@ function createCalculator() {
       try {
         account = eval(account);
         this.display.value = +account;
-        if (!account) alert("conta invalida, fazer a conta que deseja");
-        return;
+        if (!account) {
+          alert("conta invalida, fazer a conta que deseja");
+          return (this.display.value = "");
+        }
       } catch (erro) {
         alert("só numeros");
         return;
